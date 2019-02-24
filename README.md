@@ -1,4 +1,4 @@
-## ukutils
+## ukbutils
 
 This is a repo to hold a Docker image for UK Biobank utilities.
 
