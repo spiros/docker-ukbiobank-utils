@@ -1,4 +1,6 @@
-## ukbutils
+## ukbiobank utils
+
+[![](https://images.microbadger.com/badges/image/spiros123/ukbiobank-utils.svg)](https://microbadger.com/images/spiros123/ukbiobank-utils "Get your own image badge on microbadger.com")
 
 This is a repo to hold a Docker image for UK Biobank utilities.
 
