@@ -1,6 +1,6 @@
 # ukbiobank utils
 
-[![Docker Automated build](https://img.shields.io/docker/cloud/build/kasbohm/docker-ukbiobank-utils)](https://hub.docker.com/repository/docker/kasbohm/docker-ukbiobank-utils) &nbsp; [![Docker Pulls](https://img.shields.io/docker/pulls/kasbohm/docker-ukbiobank-utils)](https://hub.docker.com/repository/docker/kasbohm/docker-ukbiobank-utils) &nbsp; [![](https://images.microbadger.com/badges/image/spiros123/ukbiobank-utils.svg)](https://microbadger.com/images/spiros123/ukbiobank-utils "Get your own image badge on microbadger.com")
+[![Docker Automated build](https://img.shields.io/docker/cloud/build/spiros123/ukbiobank-utils)](https://hub.docker.com/repository/docker/spiros123/ukbiobank-utils) &nbsp; [![Docker Pulls](https://img.shields.io/docker/pulls/spiros123/ukbiobank-utils)](https://hub.docker.com/repository/docker/spiros123/ukbiobank-utils) &nbsp; [![](https://images.microbadger.com/badges/image/spiros123/ukbiobank-utils.svg)](https://microbadger.com/images/spiros123/ukbiobank-utils "Get your own image badge on microbadger.com")
 
 ## About  
 This is a repo to hold a Docker image for UK Biobank utilities.  
@@ -10,15 +10,15 @@ This Docker image will allow you to run them anywhere you want as long as you ha
 ## Run
 ``` bash
 # Decode
-docker run -v $PWD:/data --rm -it kasbohm/docker-ukbiobank-utils ukbunpack /data/ukbXXXXXX.enc /data/<keyfile>
+docker run -v $PWD:/data --rm -it spiros123/ukbiobank-utils ukbunpack /data/ukbXXXXXX.enc /data/<keyfile>
 
 # Convert to csv/r/docs/etc
-docker run -v $PWD:/data --rm -it kasbohm/docker-ukbiobank-utils ukbconv /data/ukbXXXXX.enc_ukb csv
+docker run -v $PWD:/data --rm -it spiros123/ukbiobank-utils ukbconv /data/ukbXXXXX.enc_ukb csv
 
 ```
 
 ## Build
 
 ``` bash
-docker build -t docker-biobank-utils .
+docker build -t ukbiobank-utils .
 ```
