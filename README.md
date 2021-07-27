@@ -7,6 +7,12 @@ This is a repo to hold a Docker image for UK Biobank utilities: ukbunpack, ukbfe
 By default, UK Biobank will only [provide binaries](http://biobank.ctsu.ox.ac.uk/crystal/download.cgi) for Linux and Windows for their utilities.  
 This Docker image will allow you to run them anywhere you want as long as you have Docker (i.e. OS X).  
 
+## Build
+
+``` bash
+docker build -t ukbiobank-utils .
+```
+
 ## Run
 ``` bash
 # Decode
@@ -17,8 +23,3 @@ docker run -v $PWD:/data --rm -it spiros123/ukbiobank-utils ukbconv /data/ukbXXX
 
 ```
 
-## Build
-
-``` bash
-docker build -t ukbiobank-utils .
-```
